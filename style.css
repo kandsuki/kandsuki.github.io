@@ -1,0 +1,5 @@
+$red:#0011ff;
+
+h1 {
+    color: $red;
+}
