@@ -1,5 +1,10 @@
-$red:#0011ff;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid rgb(40, 5, 238);
+}
 
-h1 {
-    color: $red;
+.header{
+    height: 90vh;
 }
