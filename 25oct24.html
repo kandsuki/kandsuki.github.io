@@ -25,13 +25,23 @@
     diagram.append(elem2);
 
     let mybutton2 = document.createElement('button');
-    mybutton2.innerText = 'Моя Кнопка2';
+    mybutton2.innerText = 'Моя Кнопка 1';
     document.body.append(mybutton2);
 
+    let mybutton3 = document.createElement('button');
+    mybutton3.innerText = 'Моя Кнопка 2';
+    document.body.append(mybutton3);
+
     mybutton2.onclick = myFunc
+    mybutton3.onclick = myFunc2
 
     function myFunc() {
         document.body.style.backgroundColor = 'black';
     }
+    function myFunc2() {
+        document.body.style.backgroundColor = 'white';
+    }
+    
 </script>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b66280b83cdf1611d547ce5796e33a51a5b5e1228da0a1fe5beb70106635ee7&width=759&height=543&lang=ru_RU&scroll=true"></script>
 </html>
