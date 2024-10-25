@@ -23,5 +23,15 @@
 
     elem2.innerText = names[1];
     diagram.append(elem2);
+
+    let mybutton2 = document.createElement('button');
+    mybutton2.innerText = 'Моя Кнопка2';
+    document.body.append(mybutton2);
+
+    mybutton2.onclick = myFunc
+
+    function myFunc() {
+        document.body.style.backgroundColor = 'black';
+    }
 </script>
 </html>
