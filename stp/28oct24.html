@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="28oct24.html"> 28октября 2024</a>
+</body>
+<script>
+    let zombie = document.createElement('img');
+    zombie.src = 'media/zzz.gif';
+    document.body.append(zombie);
+    
+    let left = 100;
+    let step = 1;  // длина шага
+
+    zombie.style.position='fixed';
+    zombie.style.top = '100px'; // отступ сверху
+    zombie.style.left = left + 'px'; // отступ слева
+
+    function moveZombie(){  // функция передвежения зомби на один шаг
+        left = left + step;
+
+        if (left > 1000){
+            step = step *(-1);
+            zombie.style.transform = 'rotateY(180deg)';
+    }
+    if (left < 0){
+            step = step *(-1);
+            zombie.style.transform = 'rotateY(0deg)';
+    }
+    zombie.style.left = left + 'px';
+}
+
+
+setInterval(moveZombie,1); // запускать функцию передвижения каждые 0.1 сек
+
+</script>
+</html>
