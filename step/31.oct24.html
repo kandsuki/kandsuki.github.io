@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="ruletka.jpg" id="rul">
+    <button onclick="stopRul()">стоп</button>
+    <button onclick="startRul()">старт</button>
+</body>
+</html>
+<script>
+    let rul = document.getElementById('rul');
+    let angle = 0;
+
+    function rotateRul(){
+        angle +=100
+        rul.style.transform = 'rotate(' + angle + 'deg)'
+    }
+    let timer;
+
+    function startRul(){
+        timer = setInterval(rotateRul, 1);
+    }
+
+    function stopRul(){
+        clearInterval(timer)
+    }
+</script>
+
+<body>
+    <img src="red sqr.jpg" id="t">
+</body>
